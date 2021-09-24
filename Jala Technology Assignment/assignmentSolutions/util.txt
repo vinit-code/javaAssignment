@@ -1,0 +1,49 @@
+package assignmentSolutions.Arrays_4;
+
+class Que9 {
+    public void solve() {
+        
+    }    
+}
+
+for (int num : arr) {
+    System.out.print(num + " );
+}
+    System.out.println();
+
+
+
+Revision :
+1. Binary Search 
+2. Different ways creating a string 
+3. Matching a String Against a Regular Expression With matches()
+4. Write a program to generate ClassNotFoundException ==> Class.forName() method in java
+5. Write a program to generate NoSuchMethodException.
+6. Write a program to generate NoSuchMethodException
+7. Write a program to generate SQLException
+8. Write a program to generate SQLException.
+9. Write a program to read text from .txt file using InputStream
+10. Write a program to read text from .txt file using OutputStream
+11. Write a program to read text from .txt file using FileReader.
+12. Write a program to write text to .txt file using FileWriter.
+13. Read text from a .txt file using BufferedReader.
+14. Traversing list using iterator.
+
+
+A, B and C are classes
+A is a super class. B is a sub class of A. C is a sub class of B.
+Create three methods in each class, 2 methods are specific to each class and third
+method (override method) should be in all three Classes A, B and C
+
+Create a class with main method. Create an object for each class A, B and C in main
+method and call every method of each class using its own object/instance.
+
+Call an overridden method with super class reference to B and C class’s objects
+Runtime Polymorphism with Data Members/Instance variables, Repeat the above
+process only for data members
+
+A 
+|
+B
+|
+C

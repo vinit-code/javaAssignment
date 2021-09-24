@@ -1,0 +1,10 @@
+{
+  "java.dependency.packagePresentation": "hierarchical",
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "assignmentSolutions/lib/xmlbeans-2.6.0.jar",
+    "assignmentSolutions/lib/poi-ooxml-schemas-3.17.jar",
+    "assignmentSolutions/lib/poi-3.17.jar",
+    "assignmentSolutions/lib/commons-collections4-4.1.jar"
+  ]
+}
