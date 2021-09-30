@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Form</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      margin: 2% auto;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5rem;
+      word-spacing: 0.25rem;
+    }
+    .row {
+      margin-bottom: 0.5%;
+    }
+    .info {
+      font-size: large;
+    }
+  </style>
+  <body>
+    <marquee style="color: green"
+      >We are open, Apply for the job ASAP:)</marquee
+    >
+    <form action="">
+      <div class="row">
+        <label for="name">Name</label>
+        <input required name="name" type="text" placeholder="your name" />
+      </div>
+
+      <div class="row">
+        <label for="email">Email</label>
+        <input
+          required
+          name="email"
+          type="email"
+          placeholder="example@abc.com"
+        />
+      </div>
+
+      <div class="row">
+        <label for="pwd">Password</label>
+        <input
+          required
+          name="pwd"
+          type="password"
+          placeholder="your password"
+        />
+      </div>
+
+      <div class="row">
+        <label for="gender">Gender</label>
+        <input name="gender" type="radio" value="Male" /> Male
+        <input name="gender" type="radio" value="female" /> Female
+        <input name="gender" type="radio" value="third" /> Else
+      </div>
+
+      <div class="row">
+        <label for="">Skills</label>
+        <input type="checkbox" name="java" /> Java
+        <input type="checkbox" name="spring-boot" /> Spring Boot
+        <input type="checkbox" name="maven" /> Maven <br />
+        <input type="checkbox" name="react" /> React.js
+        <input type="checkbox" name="git" /> Git
+      </div>
+
+      <div class="row">
+        <label for="number">Contact Number</label>
+        <input required type="number" name="number" />
+      </div>
+
+      <div class="row">
+        <label for="number">How much you like our company?</label>
+        <input type="range" name="intrest" />
+      </div>
+
+      <div class="row">
+        <label for="color">Pick your color?</label>
+        <input type="color" name="color" />
+      </div>
+
+      <div class="row">
+        <label for="dob">Date of birth</label>
+        <input required type="date" name="dob" />
+      </div>
+
+      <div class="row">
+        <label for="cv">Upload your CV</label>
+        <input type="file" name="cv" />
+      </div>
+
+      <div class="row">
+        <label for="preCom">Previous Company</label>
+        <input disabled type="text" name="preCom" />
+      </div>
+
+      <div class="row">
+        <label for="exp">Experience</label>
+        <input readonly type="text" name="exp" value="Fresher" />
+      </div>
+
+      <div class="row">
+        <label for="time">Preffered time for interview</label>
+        <input type="time" name="time" />
+        <input type="month" name="month" />
+        <input type="week" name="week" />
+      </div>
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p class="info">
+      If you are confuse, just google it, beacause for a software developer
+      google is always a good place to go for.
+      <a href="https://google.com" target="_blank">click here</a>
+    </p>
+  </body>
+</html>

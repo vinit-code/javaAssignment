@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events</title>
+    <style>
+      body {
+        text-align: center;
+        font-size: large;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dateDiv hidden"></div>
+    <button id="showCurrDate">Current Time</button>
+  </body>
+  <script>
+    const dateDiv = document.getElementsByClassName("dateDiv")[0];
+    const showCurrDateBtn = document.getElementById("showCurrDate");
+
+    showCurrDateBtn.onclick = () => {
+      // 1. prepare the data to display
+      const currDate = new Date();
+      // 2. Show the date
+      dateDiv.innerHTML = currDate;
+      dateDiv.classList.remove("hidden");
+      setInterval(() => {
+        dateDiv.classList.add("hidden");
+      }, 5000);
+    };
+  </script>
+</html>

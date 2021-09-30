@@ -1,0 +1,33 @@
+/************** This is CSS Reset **************/
+* {
+  margin: 0;
+  padding: 0;
+}
+/************** CSS Reset ends here ***********/
+
+body {
+  background-color: gainsboro;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+  word-spacing: 0.25rem;
+}
+
+.header {
+  background: url("https://i.pinimg.com/originals/f8/1d/b1/f81db1d74e0b1ed5b0f19ed409910a5a.jpg");
+  background-clip: border-box;
+  height: 10vh;
+  font-size: larger;
+}
+
+.header h1 {
+  padding-top: 2%;
+}
+section.section {
+  background-color: aqua;
+  height: 80vh;
+}
+
+section.section h3 {
+  padding-top: 10%;
+}

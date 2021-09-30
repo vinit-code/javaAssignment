@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter App</title>
+
+    <style>
+      body {
+        text-align: center;
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="counter">0</div>
+    <button id="button">Count</button>
+
+    <script>
+      const CounterObj = {
+        currentValue: 0,
+        incrementValue: function () {
+          this.currentValue++;
+        },
+        getCurrentValue: function () {
+          return this.currentValue;
+        },
+      };
+
+      const button = document.getElementById("button");
+      const resultDiv = document.getElementById("counter");
+      button.onclick = () => {
+        CounterObj.incrementValue();
+        resultDiv.innerHTML = `${CounterObj.getCurrentValue()}`;
+      };
+
+      // Prototype
+
+      function Person(fName, lName) {
+        this.firstName = fName;
+        this.lastName = lName;
+      }
+      // arrow function will not work here
+      Person.prototype.toString = function () {
+        return `[firstName: ${this.firstName}, lastName: ${this.lastName}]`;
+      };
+
+      const person = new Person("Vinit", "Pandey");
+      console.log(person.toString());
+    </script>
+  </body>
+</html>

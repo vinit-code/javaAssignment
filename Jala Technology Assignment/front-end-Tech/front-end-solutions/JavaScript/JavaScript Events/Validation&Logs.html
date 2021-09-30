@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation in JS</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <table>
+        <tr>
+          <td>Name</td>
+          <td>
+            <input type="text" name="name" id="name" placeholder="your name" />
+          </td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@abc.com"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>
+            <input type="password" name="pwd" id="pwd" />
+          </td>
+        </tr>
+        <tr>
+          <td>Confirm Password</td>
+          <td>
+            <input type="password" name="cpwd" id="cpwd" />
+          </td>
+        </tr>
+      </table>
+      <button id="submitBtn" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
+<script>
+  // log message for checking script is connnected or not
+  // console.log("Inside script");
+  const submitBtn = document.getElementById("submitBtn");
+  submitBtn.onclick = () => {
+    // log message for checking onclick listener is binded correctly or not
+    // console.log("Button Clicked");
+
+    const inputs = document.getElementsByTagName("input");
+    let isEmpty = false;
+
+    for (const input of inputs) {
+      // log message for checking input value
+      // console.log("input value = " + input.value);
+
+      if (input.value === "") {
+        isEmpty = true;
+        break;
+      }
+    }
+
+    if (isEmpty) {
+      alert("You have to fill all the inputs....");
+      return false;
+    }
+    return true;
+  };
+</script>

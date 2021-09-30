@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Que1</title>
+    <style>
+      body {
+        background-color: gainsboro;
+        height: 100vh;
+        text-align: center;
+      }
+      body:hover {
+        background-color: gray;
+      }
+      .visibiliy-example .display-example {
+        margin-top: 2%;
+      }
+
+      .visibility-hidden {
+        visibility: hidden;
+      }
+      .visibility-collapse {
+        visibility: collapse;
+      }
+
+      .list {
+        display: list-item;
+        list-style-position: inside;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="border: solid 2px #000000">
+      <thead>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Vinit</td>
+          <td>Pandey</td>
+        </tr>
+        <tr>
+          <td>Vedansh</td>
+          <td>Girdharwal</td>
+        </tr>
+        <tr>
+          <td>Abhishek</td>
+          <td>Dubey</td>
+        </tr>
+        <tr>
+          <td>Abhay</td>
+          <td>Pandey</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1>Visibility Examples:</h1>
+
+    <div class="visibiliy-example">
+      <p class="visibility-hidden">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quos
+        maiores ducimus optio exercitationem, provident veritatis. Ratione
+        debitis asperiores nulla eveniet amet animi distinctio sit ut fuga, ex
+        libero sequi!
+      </p>
+      <p class="visibility-collapse">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+        consectetur natus? Voluptatum repellendus labore delectus beatae, totam
+        obcaecati nesciunt vel dolorem ad nostrum nam excepturi nulla distinctio
+        vero dignissimos rerum!
+      </p>
+    </div>
+
+    <h1>Display Examples</h1>
+    <div class="display-example">
+      <div
+        style="
+          display: block;
+          width: 300px;
+          height: 300px;
+          background-color: aqua;
+        "
+      >
+        display: block
+      </div>
+
+      <div
+        style="
+          display: inline-block;
+          width: 300px;
+          height: 300px;
+          background-color: orange;
+        "
+      >
+        display: inline-block
+      </div>
+
+      <div
+        style="
+          display: inline-block;
+          width: 300px;
+          height: 300px;
+          background-color: whitesmoke;
+        "
+      >
+        display: inline-block
+      </div>
+
+      <div
+        style="
+          display: none;
+          width: 300px;
+          height: 300px;
+          background-color: whitesmoke;
+        "
+      >
+        This will not appear, even in normal Html document flow
+      </div>
+
+      <div class="list">I am first element in list</div>
+      <div class="list">I am second element in list</div>
+      <div class="list">I am third element in list</div>
+    </div>
+  </body>
+</html>
