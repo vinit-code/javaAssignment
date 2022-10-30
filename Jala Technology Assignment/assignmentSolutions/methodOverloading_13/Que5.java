@@ -11,17 +11,12 @@ public class Que5 {
     private int avg(double num1, double num2) {
         return (int)((num1+num2) / 2.0);
     } 
-    
-    /*
-    private double avg(double num1, double num2) {
-        return (num1+num2) / 2.0;
-    }
-    */
+
 
     public static void main(String[] args) {
         Que5 q5 = new Que5();
-        double cgpa1 = 8.57;
-        double cgpa2 = 8;
+        double cgpa1 = 8.57d;
+        double cgpa2 = 8d;
 
         System.out.println("First two year avg CGPA(rounded) = " + q5.avg(cgpa1, cgpa2));
         System.out.println("First two year avg CGPA(exact) = " + q5.avg(cgpa1, cgpa2));
